@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB.cording - NOTE</title>
+    <style>
+      body{margin: 0;}
+      * {text-decoration:none;}
+      h1 {text-align: center;}
+      #note {
+        color:black;
+        font-size:45px;
+      }
+      .link {
+        color:blue;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr 20px 1fr;
+      }
+      #java, h6 {
+        margin: 0;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+  </head>
+
+  <body>
+    <a href="index.html"><button>home</button></a>
+    <a href="index.html">home</a>
+    <title>NOTE</title>
+    <h1><a href="note.html"id="note">NOTE</a></h1>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
+    <h2>참조</h2>
+    <p>
+      1.<a href="https://opentutorials.org" target="_blank"class="link">오픈튜토리얼스</a><br>
+      2.<a href="https://github.com" target="_blank"class="link">무료웹호스팅</a><br>
+      3.<a href="https://unsplash.com" target="_blank"class="link">저작권무료 이미지</a><br>
+      4.<a href="https://caniuse.com" target="_blank"class="link">웹개발기술 통계</a><br>
+      5.<a href="https://developer.mozilla.org/ko/"target="_blank"class="link">웹개발도우미</a><br>
+      6.<a href="https://gist.github.com/egoing/634d0bf5a79e56f6e66b965eaaa38aaf"target="_blank"class="link">페북 추첨 코드</a><br>
+      7.<a href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"target="_blank"class="link">jQuery3.3.1</a><br>
+    </p>
+
+    <div id="grid">
+      <div>
+        <h2>tag종류</h2>
+        <p>
+          1.strong/ : 굵은 글씨<br>
+          2.h1~6/ : 제목<br>
+          3.u/ : 밑줄<br>
+          4.p/ : 단락지정<br>
+          5.br : 줄바꿈<br>
+          6.a/ : 링크<br>
+          7.img : 이미지등록<br>
+          8.iframe : 영상등록<br>
+          9.ul(비순서),ol(순서)-li/ : 목록,목차<br>
+          10.div/(block레이아웃),span/(incline레이아웃)<br>
+          11.style : CSS코드를 CSS의 문법에 따라 해석,적용하게 함<br>
+          12.script/ : JavaScript코드를 JavaScript의 문법에 따라 해석,적용하게 함
+          13.input : 사용자에게 입력을 받을 수 있는 필드를 생성하는 것<br>
+          14.title/ : 꼬리표,검색엔진에노출<br>
+          15./* */ : 주석?<br>
+          16.!-- -- : 내용 무시<br>
+          17.table-tr(행)-td(열) : 표만들기<br>
+        </p>
+
+        <h2>tip</h2>
+        <p>
+          1.(0)[배열]은 정보에 순서를 주어 모은 것.<br>
+            (0){객체}는 정보에 이름을 주어 모은 것.<br>
+            (1)style의 값으로는 CSS가 와야한다.<br>
+            (2)script,onclick의 값으로는 JavaScript가 와야한다.<br>
+            (3)웹브라우저 위에서 일어나는 일 = 사건,이벤트<br>
+            (4)그리드 : 부모자식레이아웃설정/부피감확인(박스모델)/세팅<br>
+              #ID{border:_; display:grid; grid-template-유형:_;}
+          2.html-head,body<br>
+          3.한글이 깨질 때<br>
+            (태그meta charset="utf-8"입력)<br>
+          4.관용적 서두 : !doctype html<br>
+          5.*동일text다중선택 : text드래그+(Ctrl+D)반복<br>
+          6.웹페이지에 CSS를 삽입하기 위해서는 style태그,style속성을 쓰면 됨<br>
+          7.한 선택자에 대해 여러 효과(속성:값)를 지정할땐 ;로 구분해서 계속 작성<br>
+          8.style태그 선택자 위계 : #id>.class>tag>*<br>
+          9.*검사 : Ctrl+Shift+I<br>
+          10.*콘솔실행 : F12 또는 우클릭+검사+ESC<br>
+        </p>
+      </div>
+
+      <div>
+      </div>
+
+      <div>
+        <h2>속성</h2>
+        <p>
+          0.**문법 : <br>
+            (1)CSS태그 : <태그 스타일="속성:값;"></태그><br>
+            (2)CSS선택자 : <헤드><스타일>선택자 {속성:값;}</스타일></헤드><br>
+            (background-color:값;)<br>
+            (3)JavaScript태그 : <인풋(기능삽입?) 타입=""..이벤트="document.명령('선택자').style.속성="값";"><br>
+            (4)JavaScript선택자?<헤드><스크립트></스크립트></헤드><br>
+            (...backgroundColor='값';)
+          1.이미지태그속성 :<br>
+            img src="" width="" height=""<br>
+          2.링크태그속성(anchor) :<br>
+            a href="주소" target="_blank" title="툴팁"<br>
+          3.영상태그속성 :<br>
+            iframe width="" height="" src=""
+          4.CSS링크속성 :<br>
+            link rel="stylesheet" href="__.css"<br>
+          5.태그지정속성 : <br>
+            (1)동치류 : tag class=""
+        </p>
+
+        <h2>CSS속성</h2>
+        <p>
+          1.단락상단 간격 : margin-top:__;<br>
+          2.글자 크기 : font-size:__;<br>
+          3.정렬 : text-align:center,left,right<br>
+          4.*반응형CSS속성(미디어쿼리) : @media(조건){선택자{CSS}}<br>
+            @media(min-width:_) { 선택자 {CSS효과;} }
+          5.박스모델 : content,padding,border,margin<br>
+        </p>
+
+        <h2 id="java">JavaScript
+          <h6>1.사용자와 상호작용하는 것을 하는 언어<br>
+              2.html은 웹브라우저로 한번 화면에 출력되면 자기자신을 변경할 수 없으나, JavaScript는 이를 제어가능
+          </h6>
+        </h2>
+        <p>
+          0.jQuery
+          1.대표 이벤트<br>
+            (1)onclick : 클릭 할때마다<br>
+            (2)onchange : (글이) 바뀔때마다<br>
+            (3)onkeydown : 타자 칠때마다<br>
+            (4)<br>
+            (5)<br>
+          2.대표 JavaScript<br>
+            (0)조건문 : if(Boolean,비교문){js}else{js}<br>
+               반복문(무한) : while(Boolean,비교문){js}<br>
+               반복문(유한) : var i=0;<br>
+                             while(i<?){js};<br>
+                             i=i+1<br>
+            (1)단순출력 : document.write()<br>
+            (2)Boolean출력 :<br>
+              document.write(비교문)<br>
+              document.querySelector('선택자').속성===''<br>
+            (3)*선택자 태그출력 : document.querySelector('선택자')<br>
+            (4)*선택자 태그속성출력 : document.querySelector('선택자').속성<br>
+            (5)*선택자 태그속성변경 : document.querySelector('선택자').속성=''<br>
+            (6)*중복제거(리팩토링) :<br>
+              this = document.querySelector('이벤트가 속한 태그')<br>
+              *var 명칭 = document.querySelector('body')<br>
+              *배열설정 : var 명칭 = ["*","**","***"]<br>
+                -배열끝추가 : 명칭.push('%');명칭.push('%%');<br>
+                -불러오기 : document.write(명칭[0~i])<br>
+            (7)동일한 태그 전부 제어 :<br>
+                var alist=document.querySelectorAll('a');
+                var i=0;
+                while(i&lt;alist.length){alist[i].style.color='blue';i=i+1;}
+          3.'',"" : 문자로 인식<br>
+          4.경고창,팝업 : alert()<br>
+          5.객체 :<br>
+            (1)
+          6.
+          7.
+          8.데이터 타입 :<br>
+            (1)string : '',""<br>
+            (2)number : 1,2,...<br>
+            (3)Variable<br>
+            (4)Boolean : true, false<br>
+            (5)Array<br>
+            (6)Function : js코드 수납상자<br>
+            (*)object<br>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
